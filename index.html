@@ -56,9 +56,6 @@
   <label>Nama Guru:</label>
   <input type="text" id="namaGuru" required>
 
-  <label>ID DELIMa:</label>
-  <input type="text" id="idDelima" required>
-
   <label>Kod Hari Ini:</label>
   <input type="text" id="kodHari" required>
 
@@ -72,7 +69,6 @@ document.getElementById("guruForm").addEventListener("submit", function(e){
 
   const data = {
     namaGuru: document.getElementById("namaGuru").value,
-    idDelima: document.getElementById("idDelima").value,
     kodHari: document.getElementById("kodHari").value
   };
 
@@ -92,5 +88,6 @@ document.getElementById("guruForm").addEventListener("submit", function(e){
 
 </body>
 </html>
+
 
 
