@@ -56,9 +56,6 @@
   <label>Nama Guru:</label>
   <input type="text" id="namaGuru" required>
 
-  <label>Kod Hari Ini:</label>
-  <input type="text" id="kodHari" required>
-
   <button type="submit">Hantar</button>
   <p id="status" style="text-align:center;margin-top:10px;"></p>
 </form>
@@ -68,8 +65,7 @@ document.getElementById("guruForm").addEventListener("submit", function(e){
   e.preventDefault();
 
   const data = {
-    namaGuru: document.getElementById("namaGuru").value,
-    kodHari: document.getElementById("kodHari").value
+    namaGuru: document.getElementById("namaGuru").value
   };
 
   fetch("https://script.google.com/macros/s/AKfycbyuHtJ32A_WUVqAzpu_Nb5sIftNHoglvGXggaZH2ug9hivMFUe0voU1VIVNjJvS_yPboQ/exec", {
@@ -88,6 +84,7 @@ document.getElementById("guruForm").addEventListener("submit", function(e){
 
 </body>
 </html>
+
 
 
 
